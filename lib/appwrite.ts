@@ -31,7 +31,7 @@ export async function createConfession(
   const databases = new Databases(client);
 
   // delay for 10 seconds
-  await new Promise((resolve) => setTimeout(resolve, 10000));
+  // await new Promise((resolve) => setTimeout(resolve, 10000));
 
   const result = await databases.createDocument(
     process.env.APPWRITE_DATABASE!,
@@ -79,7 +79,7 @@ export async function filterConfessions(weapon: string) {
   const databases = new Databases(client);
 
   // delay for 10 seconds
-  await new Promise((resolve) => setTimeout(resolve, 10000));
+  // await new Promise((resolve) => setTimeout(resolve, 10000));
 
   const confessions = await databases.listDocuments(
     process.env.APPWRITE_DATABASE!,
