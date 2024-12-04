@@ -40,7 +40,7 @@ export default function RootLayout({
           </nav>
 
           <section className="my-5 text-center">
-            <div className="inline-block p-6 rounded-2xl bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 shadow-lg relative overflow-hidden w-full">
+            <div className="inline-block px-6 py-12 bg-black bg-hero bg-cover bg-center-bottom rounded-2xl shadow-lg relative overflow-hidden w-full">
               <h1 className="text-3xl md:text-4xl font-extrabold text-white mb-2 relative z-10">
                 Code Confessions
               </h1>
