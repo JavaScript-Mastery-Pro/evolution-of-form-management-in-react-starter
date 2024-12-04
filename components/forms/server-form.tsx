@@ -68,7 +68,7 @@ function ServerForm() {
 
       <div className="space-y-2">
         <Label htmlFor="name" className="label">
-          Secret Code Name
+          Code Name
         </Label>
         <Input
           id="name"
@@ -82,7 +82,7 @@ function ServerForm() {
 
       <div className="space-y-2">
         <Label htmlFor="Weapon" className="label">
-          Weapon of Choice for Debugging
+          Weapon of Choice
         </Label>
         <Select value={weapon} onValueChange={setWeapon} required>
           <SelectTrigger className="select">
@@ -103,7 +103,7 @@ function ServerForm() {
 
       <div className="space-y-2">
         <Label htmlFor="confession" className="label">
-          Confession to the Rubber Duck
+          Your Confession
         </Label>
         <Textarea
           id="confession"

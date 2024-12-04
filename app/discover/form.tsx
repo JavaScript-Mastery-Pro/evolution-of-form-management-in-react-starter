@@ -42,7 +42,7 @@ function UseOptimisticForm() {
 
         <div className="space-y-2">
           <Label htmlFor="name" className="label">
-            Secret Code Name
+            Code Name
           </Label>
           <Input
             id="name"
@@ -55,7 +55,7 @@ function UseOptimisticForm() {
 
         <div className="space-y-2">
           <Label htmlFor="weapon" className="label">
-            Weapon of Choice for Debugging
+            Weapon of Choice
           </Label>
           <Select name="weapon" required>
             <SelectTrigger className="select">
@@ -76,7 +76,7 @@ function UseOptimisticForm() {
 
         <div className="space-y-2">
           <Label htmlFor="confession" className="label">
-            Confession to the Rubber Duck
+            Your Confession
           </Label>
           <Textarea
             id="confession"

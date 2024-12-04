@@ -100,7 +100,7 @@ function BasicForm() {
 
       <div className="space-y-2">
         <Label htmlFor="confession" className="label">
-          Confession or Secret
+          Your Confession
         </Label>
         <Textarea
           id="confession"
