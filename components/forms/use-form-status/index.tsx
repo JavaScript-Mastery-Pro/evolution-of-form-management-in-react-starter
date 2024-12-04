@@ -33,30 +33,28 @@ async function formAction(formData: FormData) {
 
 function UseFormStatusForm() {
   return (
-    <form
-      action={formAction}
-      className="space-y-8 p-7 mb-7 bg-zinc-50 rounded-lg"
-    >
-      <h3 className="text-2xl font-bold">Share Your Confession</h3>
+    <form action={formAction} className="form">
+      <h3 className="heading">Share Your Confession</h3>
 
       <div className="space-y-2">
-        <Label htmlFor="name" className="text-sm font-medium text-gray-700">
+        <Label htmlFor="name" className="label">
           Secret Code Name
         </Label>
         <Input
           id="name"
           name="name"
           placeholder="e.g., Lord of the Pings, Darth Coder"
-          className="border-gray-200 focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
+          className="input"
           required
         />
       </div>
+
       <div className="space-y-2">
-        <Label htmlFor="weapon" className="text-sm font-medium text-gray-700">
+        <Label htmlFor="weapon" className="label">
           Weapon of Choice for Debugging
         </Label>
         <Select name="weapon" required>
-          <SelectTrigger className="border-gray-200 focus:ring-2 focus:ring-purple-500 focus:border-purple-500">
+          <SelectTrigger className="select">
             <SelectValue placeholder="Select your debugging weapon" />
           </SelectTrigger>
           <SelectContent>
@@ -71,31 +69,26 @@ function UseFormStatusForm() {
           </SelectContent>
         </Select>
       </div>
+
       <div className="space-y-2">
-        <Label
-          htmlFor="confession"
-          className="text-sm font-medium text-gray-700"
-        >
+        <Label htmlFor="confession" className="label">
           Confession to the Rubber Duck
         </Label>
         <Textarea
           id="confession"
           name="confession"
           placeholder="Confess your most embarrassing bug or your weirdest coding habit"
-          className="min-h-[100px] border-gray-200 focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
+          className="textarea"
           required
         />
       </div>
 
       {/* TODO: Separate the form buttons to use useFormStatus */}
       <div className="flex justify-end space-x-4">
-        <Button type="reset" variant="outline" className="px-8">
+        <Button type="reset" variant="outline" className="btn-clear">
           Clear
         </Button>
-        <Button
-          type="submit"
-          className="bg-black hover:bg-gray-800 text-white px-8"
-        >
+        <Button type="submit" className="btn">
           Submit
         </Button>
       </div>

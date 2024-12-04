@@ -22,7 +22,7 @@ export default {
         "center-bottom": "center bottom",
       },
       backgroundImage: {
-        hero: "https://i.ibb.co/99d3vzY/image.png",
+        hero: "url('https://i.ibb.co/99d3vzY/image.png')",
       },
     },
   },

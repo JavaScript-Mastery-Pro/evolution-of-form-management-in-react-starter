@@ -1,13 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 @layer base {
   :root {
     --radius: 0.5rem;
+  }
+}
+
+@layer components {
+  .form {
+    @apply space-y-8 mb-7 w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 !important;
+  }
+
+  .heading {
+    @apply text-xl font-bold text-gray-900;
+  }
+
+  .label {
+    @apply block mb-2 text-sm font-medium text-gray-900 !important;
+  }
+
+  .input {
+    @apply focus:ring-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 w-full p-2.5 !important;
+  }
+
+  .select {
+    @apply focus:ring-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 w-full p-2.5 !important;
+  }
+
+  .textarea {
+    @apply focus:ring-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 w-full p-2.5 min-h-28 !important;
+  }
+
+  .btn {
+    @apply w-full text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-7 py-3.5 text-center !important;
+  }
+
+  .btn-clear {
+    @apply px-7 w-full py-3.5 !important;
   }
 }
