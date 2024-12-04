@@ -104,13 +104,13 @@ function ServerForm() {
       </div>
       <div className="space-y-2">
         <Label
-          htmlFor="Confession"
+          htmlFor="confession"
           className="text-sm font-medium text-gray-700"
         >
           Confession to the Rubber Duck
         </Label>
         <Textarea
-          id="Confession"
+          id="confession"
           value={confession}
           onChange={(e) => setConfession(e.target.value)}
           placeholder="Confess your most embarrassing bug or your weirdest coding habit"
